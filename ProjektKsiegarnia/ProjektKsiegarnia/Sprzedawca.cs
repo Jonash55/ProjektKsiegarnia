@@ -8,11 +8,10 @@ namespace ProjektKsiegarnia
 {
     class Sprzedawca : Pracownik, IOsoba
     {
-        public Sprzedawca(string imie, string nazwisko, int wiek)
+        public Sprzedawca(string imie, string nazwisko)
         {
             this.imie = imie;
             this.nazwisko = nazwisko;
-            this.wiek = wiek;
         }
     }
 }
