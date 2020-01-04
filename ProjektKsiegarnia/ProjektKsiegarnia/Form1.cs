@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjektKsiegarnia
 {
-    public partial class Form1 : Form
+    public partial class Start : Form
     {
-        public Form1()
+        public Start()
         {
             InitializeComponent();
         }
