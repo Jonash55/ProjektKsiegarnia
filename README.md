@@ -1,4 +1,4 @@
-# ProjektKsiegarnia
+# Projekt Księgarnia
 Programowanie Obiektowe - projekt "Księgarnia"
 Wersja testowa. Ogólnie to nie wiem co tu jeszcze, ale to wyjdzie w praniu xD
 
