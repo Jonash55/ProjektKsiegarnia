@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace ProjektKsiegarnia
 {
-    public partial class KlientZaloguj : Form
+    public partial class KierownikZaloguj : Form
     {
-        public KlientZaloguj()
+        public KierownikZaloguj()
         {
             InitializeComponent();
         }
 
-        private void KlientZalogujCofnij_Click(object sender, EventArgs e)
+        private void KierowZalogujCofnij_Click(object sender, EventArgs e)
         {
             this.Hide();
             Start PowrotDoStartu = new Start();

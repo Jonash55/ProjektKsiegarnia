@@ -1,6 +1,6 @@
 ﻿namespace ProjektKsiegarnia
 {
-    partial class PracownikZaloguj
+    partial class KierownikForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PracZalogujCofnij = new System.Windows.Forms.Button();
+            this.KierowFormCofnij = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // PracZalogujCofnij
+            // KierowFormCofnij
             // 
-            this.PracZalogujCofnij.Location = new System.Drawing.Point(691, 398);
-            this.PracZalogujCofnij.Name = "PracZalogujCofnij";
-            this.PracZalogujCofnij.Size = new System.Drawing.Size(97, 40);
-            this.PracZalogujCofnij.TabIndex = 0;
-            this.PracZalogujCofnij.Text = "Cofnij";
-            this.PracZalogujCofnij.UseVisualStyleBackColor = true;
-            this.PracZalogujCofnij.Click += new System.EventHandler(this.PracZalogujCofnij_Click);
+            this.KierowFormCofnij.Location = new System.Drawing.Point(691, 398);
+            this.KierowFormCofnij.Name = "KierowFormCofnij";
+            this.KierowFormCofnij.Size = new System.Drawing.Size(97, 40);
+            this.KierowFormCofnij.TabIndex = 2;
+            this.KierowFormCofnij.Text = "Cofnij";
+            this.KierowFormCofnij.UseVisualStyleBackColor = true;
+            this.KierowFormCofnij.Click += new System.EventHandler(this.KierowFormCofnij_Click);
             // 
-            // PracownikZaloguj
+            // KierownikForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.PracZalogujCofnij);
-            this.Name = "PracownikZaloguj";
-            this.Text = "PracownikZaloguj";
+            this.Controls.Add(this.KierowFormCofnij);
+            this.Name = "KierownikForm";
+            this.Text = "KierownikForm";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button PracZalogujCofnij;
+        private System.Windows.Forms.Button KierowFormCofnij;
     }
 }

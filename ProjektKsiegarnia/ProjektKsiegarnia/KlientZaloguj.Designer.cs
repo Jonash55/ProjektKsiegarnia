@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.KlientZalogujCofnij = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // KlientZalogujCofnij
+            // 
+            this.KlientZalogujCofnij.Location = new System.Drawing.Point(691, 398);
+            this.KlientZalogujCofnij.Name = "KlientZalogujCofnij";
+            this.KlientZalogujCofnij.Size = new System.Drawing.Size(97, 40);
+            this.KlientZalogujCofnij.TabIndex = 1;
+            this.KlientZalogujCofnij.Text = "Cofnij";
+            this.KlientZalogujCofnij.UseVisualStyleBackColor = true;
+            this.KlientZalogujCofnij.Click += new System.EventHandler(this.KlientZalogujCofnij_Click);
+            // 
+            // KlientZaloguj
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.KlientZalogujCofnij);
+            this.Name = "KlientZaloguj";
             this.Text = "KlientZaloguj";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button KlientZalogujCofnij;
     }
 }

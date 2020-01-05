@@ -1,0 +1,15 @@
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\bin\Debug\ProjektKsiegarnia.exe.config
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\bin\Debug\ProjektKsiegarnia.exe
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\bin\Debug\ProjektKsiegarnia.pdb
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\obj\Debug\ProjektKsiegarnia.csprojAssemblyReference.cache
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\obj\Debug\ProjektKsiegarnia.Start.resources
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\obj\Debug\ProjektKsiegarnia.PracownikForm.resources
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\obj\Debug\ProjektKsiegarnia.Properties.Resources.resources
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\obj\Debug\ProjektKsiegarnia.csproj.GenerateResource.cache
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\obj\Debug\ProjektKsiegarnia.exe
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\obj\Debug\ProjektKsiegarnia.pdb
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\obj\Debug\ProjektKsiegarnia.PracownikZaloguj.resources
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\obj\Debug\ProjektKsiegarnia.KlientForm.resources
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\obj\Debug\ProjektKsiegarnia.KlientZaloguj.resources
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\obj\Debug\ProjektKsiegarnia.KierownikForm.resources
+C:\Users\Bartek\Documents\GitHub\ProjektKsiegarnia\ProjektKsiegarnia\ProjektKsiegarnia\obj\Debug\ProjektKsiegarnia.KierownikZaloguj.resources

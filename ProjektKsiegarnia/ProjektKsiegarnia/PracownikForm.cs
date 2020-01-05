@@ -17,5 +17,11 @@ namespace ProjektKsiegarnia
             InitializeComponent();
         }
 
+        private void PracFormCofnij_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PracownikZaloguj PracownikFormCofka = new PracownikZaloguj();
+            PracownikFormCofka.ShowDialog();
+        }
     }
 }

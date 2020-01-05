@@ -52,6 +52,18 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="IOsoba.cs" />
+    <Compile Include="KierownikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KierownikForm.Designer.cs">
+      <DependentUpon>KierownikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KierownikZaloguj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KierownikZaloguj.Designer.cs">
+      <DependentUpon>KierownikZaloguj.cs</DependentUpon>
+    </Compile>
     <Compile Include="Klient.cs" />
     <Compile Include="KlientForm.cs">
       <SubType>Form</SubType>
@@ -85,8 +97,23 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KierownikForm.resx">
+      <DependentUpon>KierownikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KierownikZaloguj.resx">
+      <DependentUpon>KierownikZaloguj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlientForm.resx">
+      <DependentUpon>KlientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KlientZaloguj.resx">
+      <DependentUpon>KlientZaloguj.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PracownikForm.resx">
       <DependentUpon>PracownikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracownikZaloguj.resx">
+      <DependentUpon>PracownikZaloguj.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

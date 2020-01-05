@@ -16,5 +16,26 @@ namespace ProjektKsiegarnia
         {
             InitializeComponent();
         }
+
+        private void Pracownik_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PracownikZaloguj LogowankoPracownika = new PracownikZaloguj();
+            LogowankoPracownika.ShowDialog();
+        }
+
+        private void Klient_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            KlientZaloguj LogowankoKlienta = new KlientZaloguj();
+            LogowankoKlienta.ShowDialog();
+        }
+
+        private void Kierownik_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            KierownikZaloguj LogowankoKierownika = new KierownikZaloguj();
+            LogowankoKierownika.ShowDialog();
+        }
     }
 }

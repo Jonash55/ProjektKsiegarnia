@@ -16,5 +16,12 @@ namespace ProjektKsiegarnia
         {
             InitializeComponent();
         }
+
+        private void PracZalogujCofnij_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Start PowrotDoStartu = new Start();
+            PowrotDoStartu.ShowDialog();
+        }
     }
 }

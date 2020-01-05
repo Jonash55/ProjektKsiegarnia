@@ -16,5 +16,12 @@ namespace ProjektKsiegarnia
         {
             InitializeComponent();
         }
+
+        private void KlientFormCofnij_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            KlientZaloguj KlientFormCofka = new KlientZaloguj();
+            KlientFormCofka.ShowDialog();
+        }
     }
 }

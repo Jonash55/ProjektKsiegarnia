@@ -28,13 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.PracFormCofnij = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // PracFormCofnij
+            // 
+            this.PracFormCofnij.Location = new System.Drawing.Point(691, 398);
+            this.PracFormCofnij.Name = "PracFormCofnij";
+            this.PracFormCofnij.Size = new System.Drawing.Size(97, 40);
+            this.PracFormCofnij.TabIndex = 1;
+            this.PracFormCofnij.Text = "Cofnij";
+            this.PracFormCofnij.UseVisualStyleBackColor = true;
             // 
             // PracownikForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.PracFormCofnij);
             this.Name = "PracownikForm";
             this.Text = "PracownikForm";
             this.ResumeLayout(false);
@@ -42,5 +53,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button PracFormCofnij;
     }
 }

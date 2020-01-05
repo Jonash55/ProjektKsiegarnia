@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace ProjektKsiegarnia
 {
-    public partial class KlientZaloguj : Form
+    public partial class KierownikForm : Form
     {
-        public KlientZaloguj()
+        public KierownikForm()
         {
             InitializeComponent();
         }
 
-        private void KlientZalogujCofnij_Click(object sender, EventArgs e)
+        private void KierowFormCofnij_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Start PowrotDoStartu = new Start();
-            PowrotDoStartu.ShowDialog();
+            KierownikZaloguj KierownikZalogujCofka = new KierownikZaloguj();
+            KierownikZalogujCofka.ShowDialog();
         }
     }
 }
