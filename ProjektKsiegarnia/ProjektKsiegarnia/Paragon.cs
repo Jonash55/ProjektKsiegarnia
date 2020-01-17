@@ -6,14 +6,37 @@ using System.Threading.Tasks;
 
 namespace ProjektKsiegarnia
 {
-    class Paragon
+    class Paragon: Listy
     {
-        public string nazwaKsiegarni;
-        public string nazwaTowaru;
-        public int numerTowaruWMagazynie;
-        public int godzinaSprzedazy;
-        public double końcowaCena;
+        public string nazwaKsiegarni = "Ksiagarnia twoj stary";
+        public List<Ksiazka> kupowaneKsiazki = new List<Ksiazka>();
+        public double końcowaCena ;
         public double podatekVAT;
-        public int numerSprzedawcy;
+        public Sprzedawca sprzedawca;
+
+        public Paragon(List<Ksiazka> kupowaneKsiazki, Sprzedawca sprzedawca)
+        {
+            this.kupowaneKsiazki = kupowaneKsiazki;
+            this.sprzedawca = sprzedawca;
+            foreach (var k in kupowaneKsiazki)
+            {
+                this.końcowaCena += k.cena_brutto;
+                this.podatekVAT += k.cena_brutto - k.cena_netto;
+            }
+        }
+        public string ListaKsiazek(List<Ksiazka> kupowaneKsiazki)
+        {
+            string wynik = "";
+            foreach (var k in kupowaneKsiazki)
+            {
+                wynik += k.ToString() + "\n" ;
+            }
+            return wynik;
+        }
+        public override string ToString()
+        {
+            return $"PARAGON: \n {this.nazwaKsiegarni} \n {this.ListaKsiazek(kupowaneKsiazki)} \n Do zapłaty:{this.końcowaCena.ToString()}\n podatek VAT:{this.podatekVAT.ToString()}\n sprzedawca: {this.sprzedawca.ToString()}";
+        }
+
     }
 }
