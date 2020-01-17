@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjektKsiegarnia
 {
-    class Listy
+    abstract class Listy
     {
         public static List<Pracownik> pracownicy = new List<Pracownik>();
         public static List<Kierownik> kierownicy = new List<Kierownik>();

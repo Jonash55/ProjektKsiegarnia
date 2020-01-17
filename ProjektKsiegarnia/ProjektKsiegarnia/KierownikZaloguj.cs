@@ -12,9 +12,17 @@ namespace ProjektKsiegarnia
 {
     public partial class KierownikZaloguj : Form
     {
+        
         public KierownikZaloguj()
         {
             InitializeComponent();
+            
+            foreach (var k in Listy.kierownicy)
+            {
+                if(!listBox1.Items.Contains(k))
+                    listBox1.Items.Add(k.ToString());
+            }
+
         }
 
         private void KierowZalogujCofnij_Click(object sender, EventArgs e)
@@ -65,6 +73,9 @@ namespace ProjektKsiegarnia
             }
             if (tbPINAdministratora.Text == "9966" && tbNowyKierownik.Text != "")
             {
+                var nowyKierownikS = tbNowyKierownik.Text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                var nowyKierownik = new Kierownik("", "");
+                Listy.kierownicy[0].DodajPracownika(nowyKierownikS[0], nowyKierownikS[1], nowyKierownik);
                 listBox1.Items.Add(tbNowyKierownik.Text);
                 tbNowyKierownik.Text = "";
                 tbPINAdministratora.Text = "";

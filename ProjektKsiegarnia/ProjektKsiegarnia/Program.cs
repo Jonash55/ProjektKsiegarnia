@@ -14,10 +14,13 @@ namespace ProjektKsiegarnia
         [STAThread]
         static void Main()
         {
-            var listy = new Listy();
+            Kierownik kierownik = new Kierownik("Jan", "Kowalski");
+            Listy.kierownicy.Add(kierownik);
+            Listy.pracownicy.Add(kierownik);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Start());
+            
         }
     }
 }
