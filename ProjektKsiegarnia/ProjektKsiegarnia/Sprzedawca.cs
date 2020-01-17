@@ -19,6 +19,10 @@ namespace ProjektKsiegarnia
         {
             return $"Jestem sprzedawcą w księgarni. Nazywam się {this.imie} {this.nazwisko}";
         }
+        public override string ToString()
+        {
+            return $"{this.imie} {this.nazwisko}";
+        }
     }
 }
-}
+

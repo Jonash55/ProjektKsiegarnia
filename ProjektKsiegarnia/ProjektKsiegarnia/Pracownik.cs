@@ -10,11 +10,15 @@ namespace ProjektKsiegarnia
         {
             public string imie;
             public string nazwisko;
-        public string PrzedstawSie()
+            public string PrzedstawSie()
             {
                 return $"Jestem pracownikiem księgarni. Nazywam się {this.imie} {this.nazwisko}";
             }
-        }
+            public override string ToString()
+            {
+                return $"{this.imie} {this.nazwisko}";
+            }
+    }
     
 }
 

@@ -40,5 +40,9 @@ namespace ProjektKsiegarnia
             pracownicy.Add(stanowisko);
             kierownicy.Add(stanowisko);
         }
+        public override string ToString()
+        {
+            return $"{this.imie} {this.nazwisko}";
+        }
     }
 }
