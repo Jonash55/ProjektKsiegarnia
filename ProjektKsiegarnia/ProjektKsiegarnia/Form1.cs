@@ -27,7 +27,7 @@ namespace ProjektKsiegarnia
         private void Klient_Click(object sender, EventArgs e)
         {
             this.Hide();
-            KlientZaloguj LogowankoKlienta = new KlientZaloguj();
+            KlientForm LogowankoKlienta = new KlientForm();
             LogowankoKlienta.ShowDialog();
         }
 

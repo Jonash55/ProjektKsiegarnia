@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KierownikForm));
             this.KierowFormCofnij = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -37,7 +38,7 @@
             this.KierowFormCofnij.Name = "KierowFormCofnij";
             this.KierowFormCofnij.Size = new System.Drawing.Size(97, 40);
             this.KierowFormCofnij.TabIndex = 2;
-            this.KierowFormCofnij.Text = "Cofnij";
+            this.KierowFormCofnij.Text = "Wyloguj";
             this.KierowFormCofnij.UseVisualStyleBackColor = true;
             this.KierowFormCofnij.Click += new System.EventHandler(this.KierowFormCofnij_Click);
             // 
@@ -47,8 +48,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.KierowFormCofnij);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "KierownikForm";
-            this.Text = "KierownikForm";
+            this.Text = "Panel zarządzania";
             this.ResumeLayout(false);
 
         }

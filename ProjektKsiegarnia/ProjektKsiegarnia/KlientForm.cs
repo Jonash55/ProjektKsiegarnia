@@ -20,8 +20,8 @@ namespace ProjektKsiegarnia
         private void KlientFormCofnij_Click(object sender, EventArgs e)
         {
             this.Hide();
-            KlientZaloguj KlientFormCofka = new KlientZaloguj();
-            KlientFormCofka.ShowDialog();
+            Start LogowankoKlienta = new Start();
+            LogowankoKlienta.ShowDialog();
         }
     }
 }

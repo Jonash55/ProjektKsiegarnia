@@ -71,12 +71,6 @@
     <Compile Include="KlientForm.Designer.cs">
       <DependentUpon>KlientForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="KlientZaloguj.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KlientZaloguj.Designer.cs">
-      <DependentUpon>KlientZaloguj.cs</DependentUpon>
-    </Compile>
     <Compile Include="Paragon.cs" />
     <Compile Include="Pracownik.cs" />
     <Compile Include="PracownikForm.cs">
@@ -105,9 +99,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KlientForm.resx">
       <DependentUpon>KlientForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KlientZaloguj.resx">
-      <DependentUpon>KlientZaloguj.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PracownikForm.resx">
       <DependentUpon>PracownikForm.cs</DependentUpon>
