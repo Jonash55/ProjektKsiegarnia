@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjektKsiegarnia
 {
-    class Klient : IOsoba
+    abstract class Klient : Listy, IOsoba
     {
         public string imie;
         public string nazwisko;
@@ -19,7 +19,10 @@ namespace ProjektKsiegarnia
         {
             return $"Jestem klientem księgarni. Nazywam się {imie} {nazwisko}.";
         }
-
+        public override string ToString()
+        {
+            return $"{this.imie} {this.nazwisko}";
+        }
     }
 }
 

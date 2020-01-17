@@ -52,6 +52,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="IOsoba.cs" />
+    <Compile Include="Kierownik.cs" />
     <Compile Include="KierownikForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +72,8 @@
     <Compile Include="KlientForm.Designer.cs">
       <DependentUpon>KlientForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ksiazka.cs" />
+    <Compile Include="Listy.cs" />
     <Compile Include="Paragon.cs" />
     <Compile Include="Pracownik.cs" />
     <Compile Include="PracownikForm.cs">
