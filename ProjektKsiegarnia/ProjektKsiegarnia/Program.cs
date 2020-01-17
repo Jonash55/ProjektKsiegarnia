@@ -14,6 +14,7 @@ namespace ProjektKsiegarnia
         [STAThread]
         static void Main()
         {
+            var listy = new Listy();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Start());
