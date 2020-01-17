@@ -27,6 +27,7 @@ namespace ProjektKsiegarnia
         {
             if(listBox1.SelectedItems.Count == 0)
             {
+                tbPIN.Text = "";
                 MessageBox.Show("Proszę wybrać kierownika do logowania");
                 return;
             }
@@ -36,6 +37,7 @@ namespace ProjektKsiegarnia
             }
             if (tbPIN.Text != "1234" && tbPIN.Text != "")
             {
+                tbPIN.Text = "";
                 MessageBox.Show("Nieprawidłowy PIN, proszę spróbować jeszcze raz");
             }
             if(tbPIN.Text == "1234")
@@ -54,6 +56,7 @@ namespace ProjektKsiegarnia
             }
             if (tbPINAdministratora.Text != "9966" && tbPINAdministratora.Text != "")
             {
+                tbPINAdministratora.Text = "";
                 MessageBox.Show("Nieprawidłowy PIN administratora, proszę spróbować jeszcze raz");
             }
             if (tbNowyKierownik.Text == "")
