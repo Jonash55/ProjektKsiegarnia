@@ -15,10 +15,6 @@ namespace ProjektKsiegarnia
         public KierownikZaloguj()
         {
             InitializeComponent();
-            ListViewItem Kierownik = new ListViewItem("Jan");
-            Kierownik.SubItems.Add("Kowalski");
-            Kierownik.SubItems.Add("Właściciel");
-            listView1.Items.Add(Kierownik);
         }
 
         private void KierowZalogujCofnij_Click(object sender, EventArgs e)
@@ -27,21 +23,20 @@ namespace ProjektKsiegarnia
             Start PowrotDoStartu = new Start();
             PowrotDoStartu.ShowDialog();
         }
-
-        private void btKierwonikZaloguj_Click(object sender, EventArgs e)
+        private void btZaloguj_Click(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems.Count == 0)
+            if(listBox1.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Proszę wybrać kierownika");
+                MessageBox.Show("Proszę wybrać kierownika do logowania");
                 return;
             }
-            if(tbPIN.Text == "")
+            if (tbPIN.Text == "")
             {
-                MessageBox.Show("Proszę podać PIN do logowania");
-            }         
-            if(tbPIN.Text != "1234" && tbPIN.Text != "")
+                 MessageBox.Show("Proszę podać PIN");
+            }
+            if (tbPIN.Text != "1234" && tbPIN.Text != "")
             {
-                MessageBox.Show("PIN nieprawidłowy, proszę spróbować ponownie");
+                MessageBox.Show("Nieprawidłowy PIN, proszę spróbować jeszcze raz");
             }
             if(tbPIN.Text == "1234")
             {
@@ -49,7 +44,29 @@ namespace ProjektKsiegarnia
                 KierownikForm PanelZarządzania = new KierownikForm();
                 PanelZarządzania.ShowDialog();
             }
-            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (tbPINAdministratora.Text == "")
+            {
+                MessageBox.Show("Proszę podać PIN administratora");
+            }
+            if (tbPINAdministratora.Text != "9966" && tbPINAdministratora.Text != "")
+            {
+                MessageBox.Show("Nieprawidłowy PIN administratora, proszę spróbować jeszcze raz");
+            }
+            if (tbNowyKierownik.Text == "")
+            {
+                MessageBox.Show("Proszę wpisać dane nowego kierownika");
+            }
+            if (tbPINAdministratora.Text == "9966" && tbNowyKierownik.Text != "")
+            {
+                listBox1.Items.Add(tbNowyKierownik.Text);
+                tbNowyKierownik.Text = "";
+                tbPINAdministratora.Text = "";
+                MessageBox.Show("Pomyślnie dodano nowego kierownika");
+            }
         }
     }
 }
