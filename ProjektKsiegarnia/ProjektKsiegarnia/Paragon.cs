@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjektKsiegarnia
 {
-    class Paragon
+    class Paragon: Listy
     {
         public string nazwaKsiegarni;
         public string nazwaTowaru;

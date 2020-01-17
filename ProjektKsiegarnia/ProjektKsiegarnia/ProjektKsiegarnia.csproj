@@ -52,6 +52,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="IOsoba.cs" />
+    <Compile Include="Kierownik.cs" />
     <Compile Include="KierownikForm.cs">
       <SubType>Form</SubType>
     </Compile>

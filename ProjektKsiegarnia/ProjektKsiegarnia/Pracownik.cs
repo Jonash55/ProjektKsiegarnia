@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProjektKsiegarnia
 {
-    class Pracownik : IOsoba
+    class Pracownik : Listy, IOsoba
         {
             public string imie;
             public string nazwisko;
-            public string PrzedstawSie()
+        public string PrzedstawSie()
             {
                 return $"Jestem pracownikiem księgarni. Nazywam się {this.imie} {this.nazwisko}";
             }
