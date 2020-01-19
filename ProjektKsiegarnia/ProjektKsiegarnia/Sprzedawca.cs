@@ -10,6 +10,7 @@ namespace ProjektKsiegarnia
     {
         public string imie;
         public string nazwisko;
+        public int iloscSprzedazy;
         public Sprzedawca(string imie, string nazwisko)
         {
             this.imie = imie;

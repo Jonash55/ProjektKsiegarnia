@@ -82,5 +82,41 @@ namespace ProjektKsiegarnia
                 MessageBox.Show("Pomyślnie dodano nowego kierownika");
             }
         }
+
+        private void ZwolnijKierownika_Click(object sender, EventArgs e)
+        {
+            if (tbPINAdministratora.Text == "")
+            {
+                MessageBox.Show("Proszę podać PIN administratora");
+            }
+            if (tbPINAdministratora.Text != "9966" && tbPINAdministratora.Text != "")
+            {
+                tbPINAdministratora.Text = "";
+                MessageBox.Show("Nieprawidłowy PIN administratora, proszę spróbować jeszcze raz");
+            }
+            if (listBox1.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Proszę wybrać kierownika do zwolnienia");
+                return;
+            }
+            if(listBox1.SelectedItem.ToString() == Listy.wlasciciel.ToString() && tbPINAdministratora.Text == "9966")
+            {
+                MessageBox.Show("Nie można zwolnić właściciela");
+            }
+            if (tbPINAdministratora.Text == "9966" && listBox1.SelectedItem.ToString() != Listy.wlasciciel.ToString())
+            {
+                var ZwolnionyKierownikS = listBox1.SelectedItem.ToString().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                foreach (var k in Listy.kierownicy)
+                {
+                    if (k.imie == ZwolnionyKierownikS[0] && k.nazwisko == ZwolnionyKierownikS[1])
+                    {
+                        Listy.kierownicy.Remove(k);
+                        listBox1.Items.Remove(listBox1.SelectedItem.ToString());
+                        MessageBox.Show("Pomyślnie zwolniono kierowika");
+                        break;
+                    }
+                }
+            }
+        }
     }
 }

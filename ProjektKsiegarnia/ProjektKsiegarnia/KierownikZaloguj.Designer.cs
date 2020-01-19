@@ -44,6 +44,7 @@
             this.tbPINAdministratora = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.ZwolnijKierownika = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // KierowZalogujCofnij
@@ -183,11 +184,22 @@
             this.label8.Text = "Na potrzeby zadania PIN dla wszystkich nowych kierowników jest taki sam jak norma" +
     "lny";
             // 
+            // ZwolnijKierownika
+            // 
+            this.ZwolnijKierownika.Location = new System.Drawing.Point(248, 269);
+            this.ZwolnijKierownika.Name = "ZwolnijKierownika";
+            this.ZwolnijKierownika.Size = new System.Drawing.Size(97, 46);
+            this.ZwolnijKierownika.TabIndex = 21;
+            this.ZwolnijKierownika.Text = "Zwolnij kierownika";
+            this.ZwolnijKierownika.UseVisualStyleBackColor = true;
+            this.ZwolnijKierownika.Click += new System.EventHandler(this.ZwolnijKierownika_Click);
+            // 
             // KierownikZaloguj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ZwolnijKierownika);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbPINAdministratora);
@@ -228,5 +240,6 @@
         private System.Windows.Forms.TextBox tbPINAdministratora;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button ZwolnijKierownika;
     }
 }

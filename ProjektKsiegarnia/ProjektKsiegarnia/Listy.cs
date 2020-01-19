@@ -13,5 +13,7 @@ namespace ProjektKsiegarnia
         public static List<Sprzedawca> sprzedawcy = new List<Sprzedawca>();
         public static List<Ksiazka> ksiazki = new List<Ksiazka>();
         public static List<Paragon> paragony = new List<Paragon>();
+        public static List<Ksiazka> sprzedaneKsiazki = new List<Ksiazka>();
+        public static Kierownik wlasciciel = null;
     }
 }
