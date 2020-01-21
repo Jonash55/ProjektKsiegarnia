@@ -92,6 +92,7 @@
             this.doKasy.TabIndex = 13;
             this.doKasy.Text = "Do kasy";
             this.doKasy.UseVisualStyleBackColor = true;
+            this.doKasy.Click += new System.EventHandler(this.doKasy_Click);
             // 
             // doZaplaty
             // 

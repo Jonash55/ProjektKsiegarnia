@@ -27,7 +27,7 @@ namespace ProjektKsiegarnia
 
         public override string ToString()
         {
-            return $"{this.tytul} {this.autor} Rok:{this.rok_wydania} {this.cena_brutto}zł, dotępna ilość:{this.ilosc} ";
+            return $"{this.tytul} {this.autor} Rok: {this.rok_wydania} {this.cena_brutto} zł, dotępna ilość: {this.ilosc} ";
         }
     }
 }
