@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjektKsiegarnia
 {
-    class Kierownik:Pracownik,IOsoba
+    class Kierownik:Pracownik, IOsoba
     {
         public string imie;
         public string nazwisko;
