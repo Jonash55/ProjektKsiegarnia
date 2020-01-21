@@ -1,14 +1,12 @@
 # Projekt Księgarnia
 Programowanie Obiektowe - projekt "Księgarnia"
-Wersja testowa. Ogólnie to nie wiem co tu jeszcze, ale to wyjdzie w praniu xD
+Wersja 1.0. Prawdopodobnie bez przyszłych aktualizacji (?).
 
 
 
 
 
-![alt text](https://i.ytimg.com/vi/mKue4WuagL8/hqdefault.jpg)
 
-
-                                                                                                             Autorzy:
-                                                                                                    Jankowski Bartosz
-                                                                                                    Grzegorz Karowiec
+                                                                                                      Autorzy:
+                                                                                             Jankowski Bartosz 151267
+                                                                                             Grzegorz Karowiec 151087
