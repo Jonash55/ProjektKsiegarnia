@@ -19,6 +19,6 @@ namespace ProjektKsiegarnia
         public static List<Ksiazka> ksiazkiWKoszyku = new List<Ksiazka>();
         public static Kierownik wlasciciel = null;
         public static double sumaKoszyka;
-        public static string wybranyPracownik;
+        public static Sprzedawca wybranyPracownik;
     }
 }

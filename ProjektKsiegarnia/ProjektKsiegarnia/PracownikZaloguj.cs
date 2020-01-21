@@ -30,7 +30,7 @@ namespace ProjektKsiegarnia
 
         private void btZaloguj_Click(object sender, EventArgs e)
         {
-            Listy.wybranyPracownik = listBox3.SelectedItem.ToString();
+            Listy.wybranyPracownik = listBox3.SelectedItem as Sprzedawca;
             if (listBox3.SelectedItems.Count == 0)
             {
                 tbPIN.Text = "";
