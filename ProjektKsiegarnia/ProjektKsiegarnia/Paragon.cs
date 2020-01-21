@@ -8,7 +8,7 @@ namespace ProjektKsiegarnia
 {
     class Paragon: Listy
     {
-        public string nazwaKsiegarni = "Ksiagarnia twoj stary";
+        public string nazwaKsiegarni = "Ksiagarnia Słodki Pieseczek";
         public List<Ksiazka> kupowaneKsiazki = new List<Ksiazka>();
         public double końcowaCena ;
         public double podatekVAT;

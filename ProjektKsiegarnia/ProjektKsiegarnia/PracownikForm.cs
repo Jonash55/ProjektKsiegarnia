@@ -33,20 +33,34 @@ namespace ProjektKsiegarnia
         private void btWystawParagon_Click(object sender, EventArgs e)
         {
             //Wystawianie paragonu
-
-            Paragon Paragon1 = new Paragon(Listy.ksiazkiWKoszyku, Listy.wybranyPracownik);
-            Paragon1.ListaKsiazek(Listy.ksiazkiWKoszyku);
-            MessageBox.Show(Paragon1.ToString());           
-            //Dodawanie ilości sprzedanych książek do pracownika
-
-            var pracownik = Listy.wybranyPracownik.ToString().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            foreach (var s in Listy.sprzedawcy)
+            if (Listy.ksiazkiWKoszyku.Count != 0)
             {
-                if (s.imie == pracownik[0] && s.nazwisko == pracownik[1])
+                Paragon Paragon1 = new Paragon(Listy.ksiazkiWKoszyku, Listy.wybranyPracownik);
+                Paragon1.ListaKsiazek(Listy.ksiazkiWKoszyku);
+                Listy.paragony.Add(Paragon1);
+                foreach (var k in Listy.ksiazkiWKoszyku)
                 {
-                    s.iloscSprzedazy += Listy.sprzedaneKsiazki.Count;
-                    break;
+                    Listy.sprzedaneKsiazki.Add(k);
                 }
+                Listy.ksiazkiWKoszyku = new List<Ksiazka>();
+                sumaZamowienia.Text = "0";
+                MessageBox.Show(Paragon1.ToString());
+
+                //Dodawanie ilości sprzedanych książek do pracownika
+
+                var pracownik = Listy.wybranyPracownik.ToString().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                foreach (var s in Listy.sprzedawcy)
+                {
+                    if (s.imie == pracownik[0] && s.nazwisko == pracownik[1])
+                    {
+                        s.iloscSprzedazy += 1;
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Koszyk jest pusty");
             }
         }
         private void dodajKsiazke_Click(object sender, EventArgs e)
