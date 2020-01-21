@@ -73,7 +73,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 17);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Lista sprzedawcow";
+            this.label3.Text = "Lista sprzedawców";
             // 
             // imiePracownika
             // 
@@ -91,7 +91,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(221, 17);
             this.label5.TabIndex = 18;
-            this.label5.Text = "Wpisz imie i nazwisko sprzedawcy";
+            this.label5.Text = "Wpisz imię i nazwisko sprzedawcy";
             // 
             // zatrudnij
             // 

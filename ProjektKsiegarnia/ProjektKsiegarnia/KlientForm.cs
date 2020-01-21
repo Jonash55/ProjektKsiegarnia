@@ -169,6 +169,8 @@ namespace ProjektKsiegarnia
 
         private void doKasy_Click(object sender, EventArgs e)
         {
+            double doZaplatyDouble = double.Parse(doZaplaty.Text);
+            Listy.sumaKoszyka = doZaplatyDouble;
             this.Hide();
             PracownikZaloguj LogowankoPracownika = new PracownikZaloguj();
             LogowankoPracownika.ShowDialog();

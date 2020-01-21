@@ -16,7 +16,8 @@ namespace ProjektKsiegarnia
         public KierownikZaloguj()
         {
             InitializeComponent();
-            
+            //Wypisanie listy kierowników
+
             foreach (var k in Listy.kierownicy)
             {
                 if(!listBox1.Items.Contains(k))
@@ -27,6 +28,8 @@ namespace ProjektKsiegarnia
 
         private void KierowZalogujCofnij_Click(object sender, EventArgs e)
         {
+            //Cofnięcie do poprzedniego panelu
+
             this.Hide();
             Start PowrotDoStartu = new Start();
             PowrotDoStartu.ShowDialog();
@@ -73,6 +76,8 @@ namespace ProjektKsiegarnia
             }
             if (tbPINAdministratora.Text == "9966" && tbNowyKierownik.Text != "")
             {
+                //Dodawanie nowego kierownika
+
                 var nowyKierownikS = tbNowyKierownik.Text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 var nowyKierownik = new Kierownik("", "");
                 Listy.kierownicy[0].DodajPracownika(nowyKierownikS[0], nowyKierownikS[1], nowyKierownik);
@@ -85,6 +90,8 @@ namespace ProjektKsiegarnia
 
         private void ZwolnijKierownika_Click(object sender, EventArgs e)
         {
+            //Zwalnianie kierownika po uprzedniej weryfikacji tożsamości
+
             if (tbPINAdministratora.Text == "")
             {
                 MessageBox.Show("Proszę podać PIN administratora");

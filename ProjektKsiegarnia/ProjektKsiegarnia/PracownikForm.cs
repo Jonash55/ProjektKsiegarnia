@@ -15,13 +15,20 @@ namespace ProjektKsiegarnia
         public PracownikForm()
         {
             InitializeComponent();
+            sumaZamowienia.Text = Listy.sumaKoszyka.ToString();
+            label3.Text = Listy.wybranyPracownik;
         }
-
-        private void PracFormCofnij_Click(object sender, EventArgs e)
+        
+        private void PracFormCofnij_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             PracownikZaloguj PracownikFormCofka = new PracownikZaloguj();
             PracownikFormCofka.ShowDialog();
+        }
+
+        private void btWystawParagon_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

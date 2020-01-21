@@ -44,7 +44,7 @@
             // KlientFormCofnij
             // 
             this.KlientFormCofnij.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.KlientFormCofnij.Location = new System.Drawing.Point(707, 474);
+            this.KlientFormCofnij.Location = new System.Drawing.Point(707, 483);
             this.KlientFormCofnij.Name = "KlientFormCofnij";
             this.KlientFormCofnij.Size = new System.Drawing.Size(97, 40);
             this.KlientFormCofnij.TabIndex = 1;
@@ -86,9 +86,9 @@
             // doKasy
             // 
             this.doKasy.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.doKasy.Location = new System.Drawing.Point(199, 461);
+            this.doKasy.Location = new System.Drawing.Point(199, 459);
             this.doKasy.Name = "doKasy";
-            this.doKasy.Size = new System.Drawing.Size(75, 37);
+            this.doKasy.Size = new System.Drawing.Size(75, 41);
             this.doKasy.TabIndex = 13;
             this.doKasy.Text = "Do kasy";
             this.doKasy.UseVisualStyleBackColor = true;
@@ -135,9 +135,9 @@
             // usunZKoszyka
             // 
             this.usunZKoszyka.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.usunZKoszyka.Location = new System.Drawing.Point(573, 443);
+            this.usunZKoszyka.Location = new System.Drawing.Point(609, 440);
             this.usunZKoszyka.Name = "usunZKoszyka";
-            this.usunZKoszyka.Size = new System.Drawing.Size(128, 37);
+            this.usunZKoszyka.Size = new System.Drawing.Size(162, 37);
             this.usunZKoszyka.TabIndex = 18;
             this.usunZKoszyka.Text = "Usuń z koszyka";
             this.usunZKoszyka.UseVisualStyleBackColor = true;
