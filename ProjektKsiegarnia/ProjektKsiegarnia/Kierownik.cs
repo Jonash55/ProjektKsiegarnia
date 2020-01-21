@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 
 namespace ProjektKsiegarnia
 {
-    class Kierownik:Pracownik, IOsoba
+    class Kierownik : Sprzedawca, IOsoba
     {
-        public string imie;
-        public string nazwisko;
-        public Kierownik(string imie, string nazwisko)
+        public Kierownik(string imie, string nazwisko): base(imie, nazwisko)
         {
-            this.imie = imie;
-            this.nazwisko = nazwisko;
+            Listy.sprzedawcy.Add(this);
         }
+        
+            
         public string PrzedstawSie()
         {
-            return $"Jestem kierownikiem księgarni. Nazywam się {this.imie} {this.nazwisko}.";
+            return $"{this.imie} {this.nazwisko}";
         }
 
         public void DodajPracownika(string imie, string nazwisko, Pracownik stanowisko)

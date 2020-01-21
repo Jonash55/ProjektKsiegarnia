@@ -8,14 +8,11 @@ namespace ProjektKsiegarnia
 {
     class Sprzedawca : Pracownik, IOsoba
     {
-        public string imie;
-        public string nazwisko;
-        public int iloscSprzedazy;
-        public Sprzedawca(string imie, string nazwisko)
+        public Sprzedawca(string imie, string nazwisko): base(imie, nazwisko)
         {
-            this.imie = imie;
-            this.nazwisko = nazwisko;
+
         }
+        public int iloscSprzedazy;
         public string PrzedstawSie()
         {
             return $"{this.imie} {this.nazwisko}";

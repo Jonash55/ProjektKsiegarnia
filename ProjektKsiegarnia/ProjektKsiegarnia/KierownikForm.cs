@@ -64,12 +64,20 @@ namespace ProjektKsiegarnia
             }
             foreach (var s in Listy.sprzedawcy)
             {
-                if(s.imie==nowyPracownikS[0] && s.nazwisko==nowyPracownikS[1])
+                if (!Listy.kierownicy.Contains(s))
                 {
-                    Listy.sprzedawcy.Remove(s);
-                    listBox2.Items.Remove(listBox2.SelectedItem.ToString());
-                    MessageBox.Show("Pomyślnie zwolniono sprzedawcę");
-                    break;
+                    if (s.imie == nowyPracownikS[0] && s.nazwisko == nowyPracownikS[1])
+                    {
+                        Listy.sprzedawcy.Remove(s);
+                        Listy.pracownicy.Remove(s);
+                        listBox2.Items.Remove(listBox2.SelectedItem.ToString());
+                        MessageBox.Show("Pomyślnie zwolniono sprzedawcę");
+                        break;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Nie można zwolnić kierownika");
                 }
             }       
         }

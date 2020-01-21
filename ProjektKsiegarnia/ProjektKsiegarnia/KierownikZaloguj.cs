@@ -118,6 +118,7 @@ namespace ProjektKsiegarnia
                     if (k.imie == ZwolnionyKierownikS[0] && k.nazwisko == ZwolnionyKierownikS[1])
                     {
                         Listy.kierownicy.Remove(k);
+                        Listy.pracownicy.Remove(k);
                         listBox1.Items.Remove(listBox1.SelectedItem.ToString());
                         MessageBox.Show("Pomyślnie zwolniono kierowika");
                         break;
