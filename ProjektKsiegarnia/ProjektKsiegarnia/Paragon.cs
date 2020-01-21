@@ -35,7 +35,7 @@ namespace ProjektKsiegarnia
         }
         public override string ToString()
         {
-            return $"PARAGON: \n {this.nazwaKsiegarni} \n {this.ListaKsiazek(kupowaneKsiazki)} \n Do zapłaty:{this.końcowaCena.ToString()}\n podatek VAT:{this.podatekVAT.ToString()}\n sprzedawca: {this.sprzedawca.ToString()}";
+            return $"PARAGON: \n{this.nazwaKsiegarni} \n{this.ListaKsiazek(kupowaneKsiazki)} \n do zapłaty: {this.końcowaCena.ToString()} zł\n podatek VAT: {this.podatekVAT.ToString()} zł\n sprzedawca: {this.sprzedawca.ToString()}";
         }
 
     }

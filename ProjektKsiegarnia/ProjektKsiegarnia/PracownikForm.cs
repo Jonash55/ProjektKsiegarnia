@@ -16,8 +16,9 @@ namespace ProjektKsiegarnia
         {
             InitializeComponent();
             sumaZamowienia.Text = Listy.sumaKoszyka.ToString();
-            
-            
+            label3.Text = Listy.wybranyPracownik.PrzedstawSie();
+            if (sumaZamowienia.Text == "0")
+                btWystawParagon.Enabled = false;
         }
         
         private void PracFormCofnij_Click_1(object sender, EventArgs e)
@@ -29,9 +30,9 @@ namespace ProjektKsiegarnia
 
         private void btWystawParagon_Click(object sender, EventArgs e)
         {
-            Paragon Paragon = new Paragon(Listy.ksiazkiWKoszyku, Listy.wybranyPracownik);
-            Paragon.ListaKsiazek(Listy.ksiazkiWKoszyku);
-            MessageBox.Show(Paragon.ToString());
+            Paragon Paragon1 = new Paragon(Listy.ksiazkiWKoszyku, Listy.wybranyPracownik);
+            Paragon1.ListaKsiazek(Listy.ksiazkiWKoszyku);
+            MessageBox.Show(Paragon1.ToString());
         }
 
     }
