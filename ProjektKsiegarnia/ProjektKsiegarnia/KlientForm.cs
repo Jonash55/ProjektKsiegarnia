@@ -37,56 +37,30 @@ namespace ProjektKsiegarnia
 
         private void dodajDoKoszyka_Click(object sender, EventArgs e)
         {
+
             if (wyborKsiazek.SelectedItems.Count == 0)
                 MessageBox.Show("Proszę wybrać ksiązkę");
             else
             {
-                var zaplataS = doZaplaty.Text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                var wybranaKsiazkaS = wyborKsiazek.SelectedItem.ToString().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                double zaplata = double.Parse(zaplataS[0]);
-                List<Ksiazka> doUsuniecia = new List<Ksiazka>();
-                foreach (var k in Listy.ksiazki)
+                var wybranaksiazkaS = wyborKsiazek.SelectedItem.ToString().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                Ksiazka pierwszaZPolki = null;
+                double zaplata = double.Parse(doZaplaty.Text);
+                List<Ksiazka> polkaZTytulem = new List<Ksiazka>();
+                for (int i = 0; i < wybranaksiazkaS.Length; i++)
                 {
-                    for (int i = 0; i < wybranaKsiazkaS.Length; i++)
-                    {
-                        if (k.tytul == wybranaKsiazkaS[i])
-                        {
-                            if (k.ilosc - 1 > 0)
-                            {
-                                k.ilosc--;
-                                zaplata += k.cena_brutto;
-                                Listy.ksiazkiWKoszyku.Add(k);
-                                koszyk.Items.Add(k.ToString());
-                                wyborKsiazek.Refresh();
-                            }
-                            else if(k.ilosc-1<0)
-                            {
-                                doUsuniecia.Add(k);
-                                MessageBox.Show("Ksiazka nie jest juz dostepna");
-                            }
-                            else
-                            {
-                                k.ilosc--;
-                                zaplata += k.cena_brutto;
-                                Listy.ksiazkiWKoszyku.Add(k);
-                                koszyk.Items.Add(k.ToString());
-                                wyborKsiazek.Items.Remove(wyborKsiazek.SelectedItem);
-                                wyborKsiazek.Refresh();
-                                doUsuniecia.Add(k);
-                                MessageBox.Show("To była ostatnia dostępna książka");
-                            }
-                                       
-                            doZaplaty.Text = zaplata.ToString();
-                        }
-                    }
+                    polkaZTytulem = Listy.ksiazki.Where(k => k.tytul == wybranaksiazkaS[i]).ToList();
+                    if (polkaZTytulem.Count != 0)
+                        break;
                 }
-                foreach (var k in doUsuniecia)
-                {
-                    if (Listy.ksiazki.Contains(k))
-                        Listy.ksiazki.Remove(k);
-                }
+                pierwszaZPolki = polkaZTytulem.First();
+                Listy.ksiazkiWKoszyku.Add(pierwszaZPolki);
+                wyborKsiazek.Items.Remove(wyborKsiazek.SelectedItem);
+                Listy.ksiazki.Remove(pierwszaZPolki);
+                koszyk.Items.Add(pierwszaZPolki.ToString());
+                zaplata += pierwszaZPolki.cena_brutto;
+                doZaplaty.Text = zaplata.ToString();
             }
-
+            
         }
 
         private void usunZKoszyka_Click(object sender, EventArgs e)
@@ -95,75 +69,23 @@ namespace ProjektKsiegarnia
                 MessageBox.Show("Proszę wybrać ksiązkę");
             else
             {
-                var wybranaKsiazkaS = koszyk.SelectedItem.ToString().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                var wybranaksiazkaS = koszyk.SelectedItem.ToString().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                Ksiazka pierwszaZKoszyka = null;
+                double zaplata = double.Parse(doZaplaty.Text);
+                List<Ksiazka> tytulyWKoszyku = new List<Ksiazka>();
+                for (int i = 0; i < wybranaksiazkaS.Length; i++)
+                {
+                    tytulyWKoszyku = Listy.ksiazkiWKoszyku.Where(k => k.tytul == wybranaksiazkaS[i]).ToList();
+                    if (tytulyWKoszyku.Count != 0)
+                        break;
+                }
+                pierwszaZKoszyka = tytulyWKoszyku.First();
+                Listy.ksiazkiWKoszyku.Remove(pierwszaZKoszyka);
                 koszyk.Items.Remove(koszyk.SelectedItem);
-                var zaplataS = doZaplaty.Text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                double zaplata = double.Parse(zaplataS[0]);
-                List<Ksiazka> doDodania = new List<Ksiazka>();
-                List<Ksiazka> doUsuniecia = new List<Ksiazka>();
-                List<Ksiazka> czyJest = null;
-                for (int i = 0; i < wybranaKsiazkaS.Length; i++)
-                {
-                    czyJest = Listy.ksiazki.Where(l => l.tytul == wybranaKsiazkaS[i]).ToList();
-                }
-                if (czyJest.Count != 0)
-                {
-                    foreach (var k in Listy.ksiazki)
-                    {
-                        for (int i = 0; i < wybranaKsiazkaS.Length; i++)
-                        {
-                            if (k.ilosc > 0)
-                            {
-                                if (k.tytul == wybranaKsiazkaS[i])
-                                {
-                                    k.ilosc++;
-                                    Listy.ksiazkiWKoszyku.Remove(k);
-                                    zaplata -= k.cena_brutto;
-                                    wyborKsiazek.Refresh();
-                                }
-                            }
-                            else
-                            {
-                                doDodania.Add(k);
-                                k.ilosc++;
-                                Listy.ksiazkiWKoszyku.Remove(k);
-                                wyborKsiazek.Items.Add(k.ToString());
-                                wyborKsiazek.Refresh();
-                                zaplata -= k.cena_brutto;
-                            }
-                        }
-                        doZaplaty.Text = zaplata.ToString();
-                    }
-                }
-                else
-                {
-                    foreach (var k in Listy.ksiazkiWKoszyku)
-                    {
-                        for (int i = 0; i < wybranaKsiazkaS.Length; i++)
-                        {
-                            if (k.tytul == wybranaKsiazkaS[i] && k.ilosc == int.Parse(wybranaKsiazkaS[8]))
-                            {
-                                k.ilosc++;
-                                doUsuniecia.Add(k);
-                                wyborKsiazek.Items.Add(k.ToString());
-                                wyborKsiazek.Refresh();
-                                Listy.ksiazki.Add(k);
-                                zaplata -= k.cena_brutto;
-                            }
-                        }
-                        doZaplaty.Text = zaplata.ToString();
-                    }
-                }
-                foreach (var k in doDodania)
-                {
-                    if (!Listy.ksiazki.Contains(k))
-                        Listy.ksiazki.Add(k);
-                }
-                foreach (var k in doUsuniecia)
-                {
-                    if (Listy.ksiazkiWKoszyku.Contains(k))
-                        Listy.ksiazkiWKoszyku.Remove(k);
-                }
+                wyborKsiazek.Items.Add(pierwszaZKoszyka.ToString());
+                Listy.ksiazki.Add(pierwszaZKoszyka);
+                zaplata -= pierwszaZKoszyka.cena_brutto;
+                doZaplaty.Text = zaplata.ToString();
             }
         }
 
