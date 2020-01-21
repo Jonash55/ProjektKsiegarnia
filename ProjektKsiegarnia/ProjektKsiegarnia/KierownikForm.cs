@@ -15,6 +15,8 @@ namespace ProjektKsiegarnia
         public KierownikForm()
         {
             InitializeComponent();
+            //Podsumowanie pracowników
+            
             sprzedaneKsiazki.Text = Listy.sprzedaneKsiazki.Count.ToString();
             double lacznaKwotaD = 0;
             foreach (var p in Listy.paragony)
@@ -46,6 +48,8 @@ namespace ProjektKsiegarnia
 
         private void zatrudnij_Click(object sender, EventArgs e)
         {
+            //Dodawanie nowego pracownika
+            
             var nowyPracownikS = imiePracownika.Text.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             var nowyPracownik = new Sprzedawca("", "");
             Listy.kierownicy[0].DodajPracownika(nowyPracownikS[0], nowyPracownikS[1], nowyPracownik);
@@ -56,6 +60,8 @@ namespace ProjektKsiegarnia
 
         private void zwolnij_Click(object sender, EventArgs e)
         {
+            //Zwalnianie pracownika
+
             var nowyPracownikS = listBox2.SelectedItem.ToString().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             if (listBox2.SelectedItems.Count == 0)
             {

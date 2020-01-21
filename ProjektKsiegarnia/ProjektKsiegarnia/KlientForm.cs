@@ -14,7 +14,7 @@ namespace ProjektKsiegarnia
     {
         public KlientForm()
         {
-            InitializeComponent();
+            InitializeComponent();       
             foreach (var k in Listy.ksiazki)
             {
                 wyborKsiazek.Items.Add(k.ToString());
@@ -26,6 +26,7 @@ namespace ProjektKsiegarnia
                 zaplata += k.cena_brutto;
             }
             doZaplaty.Text = zaplata.ToString();
+            
         }
 
         private void KlientFormCofnij_Click(object sender, EventArgs e)
@@ -37,7 +38,8 @@ namespace ProjektKsiegarnia
 
         private void dodajDoKoszyka_Click(object sender, EventArgs e)
         {
-
+            //Dodawanie do koszyka
+            
             if (wyborKsiazek.SelectedItems.Count == 0)
                 MessageBox.Show("Proszę wybrać ksiązkę");
             else
@@ -65,6 +67,8 @@ namespace ProjektKsiegarnia
 
         private void usunZKoszyka_Click(object sender, EventArgs e)
         {
+            //Usuwanie z koszyka
+            
             if (koszyk.SelectedItems.Count == 0)
                 MessageBox.Show("Proszę wybrać ksiązkę");
             else
@@ -91,6 +95,8 @@ namespace ProjektKsiegarnia
 
         private void doKasy_Click(object sender, EventArgs e)
         {
+            //Przejscie do kasy
+            
             double doZaplatyDouble = double.Parse(doZaplaty.Text);
             Listy.sumaKoszyka = doZaplatyDouble;
             this.Hide();

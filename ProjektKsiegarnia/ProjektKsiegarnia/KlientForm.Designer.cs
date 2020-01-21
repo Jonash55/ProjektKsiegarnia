@@ -44,7 +44,7 @@
             // KlientFormCofnij
             // 
             this.KlientFormCofnij.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.KlientFormCofnij.Location = new System.Drawing.Point(707, 483);
+            this.KlientFormCofnij.Location = new System.Drawing.Point(674, 483);
             this.KlientFormCofnij.Name = "KlientFormCofnij";
             this.KlientFormCofnij.Size = new System.Drawing.Size(97, 40);
             this.KlientFormCofnij.TabIndex = 1;
@@ -86,7 +86,7 @@
             // doKasy
             // 
             this.doKasy.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.doKasy.Location = new System.Drawing.Point(199, 459);
+            this.doKasy.Location = new System.Drawing.Point(196, 459);
             this.doKasy.Name = "doKasy";
             this.doKasy.Size = new System.Drawing.Size(75, 41);
             this.doKasy.TabIndex = 13;
@@ -97,7 +97,7 @@
             // doZaplaty
             // 
             this.doZaplaty.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.doZaplaty.Location = new System.Drawing.Point(93, 468);
+            this.doZaplaty.Location = new System.Drawing.Point(90, 468);
             this.doZaplaty.Name = "doZaplaty";
             this.doZaplaty.Size = new System.Drawing.Size(100, 22);
             this.doZaplaty.TabIndex = 14;
@@ -106,7 +106,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 471);
+            this.label3.Location = new System.Drawing.Point(9, 471);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 17);
             this.label3.TabIndex = 15;
@@ -116,7 +116,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(368, 9);
+            this.label1.Location = new System.Drawing.Point(353, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 17);
             this.label1.TabIndex = 16;
@@ -126,7 +126,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(368, 253);
+            this.label2.Location = new System.Drawing.Point(353, 253);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 17);
             this.label2.TabIndex = 17;
@@ -147,7 +147,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 526);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(787, 526);
             this.Controls.Add(this.usunZKoszyka);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

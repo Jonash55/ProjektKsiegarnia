@@ -95,7 +95,7 @@
             // 
             this.listBox3.FormattingEnabled = true;
             this.listBox3.ItemHeight = 16;
-            this.listBox3.Location = new System.Drawing.Point(12, 80);
+            this.listBox3.Location = new System.Drawing.Point(15, 80);
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(776, 292);
             this.listBox3.TabIndex = 14;
@@ -120,6 +120,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tbPIN);
             this.Controls.Add(this.label4);

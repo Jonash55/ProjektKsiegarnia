@@ -35,8 +35,16 @@
             this.btWystawParagon = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.Tytul = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.listBoxWyszukiwanie = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Autor = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.rokWydania = new System.Windows.Forms.TextBox();
+            this.cenaNetto = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dodajKsiazke = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PracFormCofnij
@@ -93,31 +101,105 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "label3";
             // 
+            // Tytul
+            // 
+            this.Tytul.Location = new System.Drawing.Point(12, 167);
+            this.Tytul.Name = "Tytul";
+            this.Tytul.Size = new System.Drawing.Size(130, 22);
+            this.Tytul.TabIndex = 9;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 85);
+            this.label4.Location = new System.Drawing.Point(12, 115);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(224, 17);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Wyszukiwanie dostępnych książek";
+            this.label4.Size = new System.Drawing.Size(230, 17);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Narzędzie dodawania nowej książki";
             // 
-            // listBoxWyszukiwanie
+            // label5
             // 
-            this.listBoxWyszukiwanie.FormattingEnabled = true;
-            this.listBoxWyszukiwanie.ItemHeight = 16;
-            this.listBoxWyszukiwanie.Location = new System.Drawing.Point(12, 106);
-            this.listBoxWyszukiwanie.Name = "listBoxWyszukiwanie";
-            this.listBoxWyszukiwanie.Size = new System.Drawing.Size(776, 276);
-            this.listBoxWyszukiwanie.TabIndex = 10;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(9, 136);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(131, 17);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Tytuł (bez odstępu)";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(158, 136);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(134, 17);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Autor (bez odstępu)";
+            // 
+            // Autor
+            // 
+            this.Autor.Location = new System.Drawing.Point(161, 167);
+            this.Autor.Name = "Autor";
+            this.Autor.Size = new System.Drawing.Size(130, 22);
+            this.Autor.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(303, 136);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(88, 17);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Rok wydania";
+            // 
+            // rokWydania
+            // 
+            this.rokWydania.Location = new System.Drawing.Point(306, 167);
+            this.rokWydania.Name = "rokWydania";
+            this.rokWydania.Size = new System.Drawing.Size(130, 22);
+            this.rokWydania.TabIndex = 15;
+            // 
+            // cenaNetto
+            // 
+            this.cenaNetto.Location = new System.Drawing.Point(450, 167);
+            this.cenaNetto.Name = "cenaNetto";
+            this.cenaNetto.Size = new System.Drawing.Size(130, 22);
+            this.cenaNetto.TabIndex = 16;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(447, 136);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 17);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Cena Netto";
+            // 
+            // dodajKsiazke
+            // 
+            this.dodajKsiazke.Location = new System.Drawing.Point(12, 219);
+            this.dodajKsiazke.Name = "dodajKsiazke";
+            this.dodajKsiazke.Size = new System.Drawing.Size(130, 46);
+            this.dodajKsiazke.TabIndex = 18;
+            this.dodajKsiazke.Text = "Dodaj nową książkę";
+            this.dodajKsiazke.UseVisualStyleBackColor = true;
+            this.dodajKsiazke.Click += new System.EventHandler(this.dodajKsiazke_Click);
             // 
             // PracownikForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listBoxWyszukiwanie);
+            this.Controls.Add(this.dodajKsiazke);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.cenaNetto);
+            this.Controls.Add(this.rokWydania);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.Autor);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.Tytul);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btWystawParagon);
@@ -140,7 +222,15 @@
         private System.Windows.Forms.Button btWystawParagon;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox Tytul;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox listBoxWyszukiwanie;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox Autor;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox rokWydania;
+        private System.Windows.Forms.TextBox cenaNetto;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button dodajKsiazke;
     }
 }

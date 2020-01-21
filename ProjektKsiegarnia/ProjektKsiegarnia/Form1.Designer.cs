@@ -83,11 +83,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(376, 431);
             this.Controls.Add(this.Kierownik);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Klient);
             this.Controls.Add(this.Pracownik);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Start";
             this.Text = "Start";

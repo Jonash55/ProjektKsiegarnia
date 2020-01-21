@@ -30,6 +30,8 @@ namespace ProjektKsiegarnia
 
         private void btZaloguj_Click(object sender, EventArgs e)
         {
+            //Logowanie dla pracownika
+            
             var nowyPracownikS = listBox3.SelectedItem.ToString().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             foreach (var s in Listy.sprzedawcy)
             {
