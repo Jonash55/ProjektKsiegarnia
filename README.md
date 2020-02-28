@@ -8,5 +8,5 @@ Wersja 1.0. Prawdopodobnie bez przyszłych aktualizacji (?).
 
 
                                                                                                       Autorzy:
-                                                                                             Jankowski Bartosz 151267
-                                                                                             Grzegorz Karowiec 151087
+                                                                                             B. J.
+                                                                                             G. K.
